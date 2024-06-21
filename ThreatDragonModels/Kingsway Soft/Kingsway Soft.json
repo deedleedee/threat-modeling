@@ -229,54 +229,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Pull data / write response",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "a7f20ee7-b53b-4e1d-95db-ce9fa5e8aecb",
-            "source": {
-              "cell": "9a13854d-cbf0-4e35-b20e-ccb1f354bf2f"
-            },
-            "target": {
-              "cell": "3f28ee02-94ad-41b2-92c7-043a05b9d16f"
-            },
-            "vertices": [
-              {
-                "x": -260,
-                "y": 300
-              }
-            ],
-            "labels": [
-              "Pull data / write response"
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Push data / receive response",
               "description": "",
               "outOfScope": false,
@@ -348,6 +300,96 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Pull data / write response",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "a7f20ee7-b53b-4e1d-95db-ce9fa5e8aecb",
+            "source": {
+              "cell": "9a13854d-cbf0-4e35-b20e-ccb1f354bf2f"
+            },
+            "target": {
+              "cell": "3f28ee02-94ad-41b2-92c7-043a05b9d16f"
+            },
+            "vertices": [
+              {
+                "x": -260,
+                "y": 300
+              }
+            ],
+            "labels": [
+              "Pull data / write response"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Write audit logs",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "89f846ba-c4aa-45ce-9768-65b580271b1f",
+            "source": {
+              "cell": "3f28ee02-94ad-41b2-92c7-043a05b9d16f"
+            },
+            "target": {
+              "cell": "ea6ae932-2003-467d-a7e2-c78dab361e15"
+            },
+            "labels": [
+              "Write audit logs"
+            ]
+          },
+          {
             "position": {
               "x": 730,
               "y": 270
@@ -361,8 +403,8 @@
                 "text": "API"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -376,9 +418,23 @@
               "description": "Dataverse API.",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": true,
-              "threats": []
+              "threats": [
+                {
+                  "id": "7ce4c9e3-234b-4830-8b23-961c306fa00b",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 1,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -417,8 +473,8 @@
           },
           {
             "position": {
-              "x": -210,
-              "y": 60
+              "x": -230,
+              "y": 140
             },
             "size": {
               "width": 60,
@@ -451,6 +507,47 @@
               "privilegeLevel": "",
               "threats": []
             }
+          },
+          {
+            "position": {
+              "x": -600,
+              "y": 190
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Audit Database"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "ea6ae932-2003-467d-a7e2-c78dab361e15",
+            "zIndex": 14,
+            "data": {
+              "type": "tm.Store",
+              "name": "Audit Database",
+              "description": "SQL Server audit database.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": true,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
           }
         ],
         "description": "Main migration data flow."
@@ -458,6 +555,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 1
   }
 }
