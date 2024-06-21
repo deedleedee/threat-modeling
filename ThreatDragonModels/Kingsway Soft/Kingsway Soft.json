@@ -41,8 +41,8 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "9a13854d-cbf0-4e35-b20e-ccb1f354bf2f",
             "zIndex": 1,
+            "id": "9a13854d-cbf0-4e35-b20e-ccb1f354bf2f",
             "data": {
               "type": "tm.Store",
               "name": "Source Database",
@@ -82,8 +82,8 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "a8089234-da45-42d0-99a7-0b45f6632ed4",
             "zIndex": 2,
+            "id": "a8089234-da45-42d0-99a7-0b45f6632ed4",
             "data": {
               "type": "tm.Store",
               "name": "Destination Database",
@@ -113,6 +113,9 @@
               "hasOpenThreats": false
             },
             "id": "0e29802b-10c2-4b52-a3e7-16ba6b1171a1",
+            "labels": [
+              "On-Premises Boundary"
+            ],
             "source": {
               "x": 110,
               "y": 110
@@ -138,9 +141,6 @@
                 "x": 290,
                 "y": 260
               }
-            ],
-            "labels": [
-              "On-Premises Boundary"
             ]
           },
           {
@@ -157,6 +157,9 @@
               "hasOpenThreats": false
             },
             "id": "2c58a59b-3a5f-4dec-a6b6-b98ca7ada0a5",
+            "labels": [
+              "Cloud Boundary"
+            ],
             "source": {
               "x": 560,
               "y": 330
@@ -186,9 +189,6 @@
                 "x": 550,
                 "y": 70
               }
-            ],
-            "labels": [
-              "Cloud Boundary"
             ]
           }
         ],
