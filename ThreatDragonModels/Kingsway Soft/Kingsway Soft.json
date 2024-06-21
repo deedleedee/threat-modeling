@@ -197,7 +197,7 @@
             "data": {
               "type": "tm.Actor",
               "name": "API",
-              "description": "Dataverse API",
+              "description": "Dataverse API.",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
