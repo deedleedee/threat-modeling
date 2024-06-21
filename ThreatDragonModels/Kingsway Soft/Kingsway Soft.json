@@ -1,0 +1,16 @@
+{
+  "version": "2.2.0",
+  "summary": {
+    "title": "Kingsway Soft",
+    "owner": "",
+    "description": "Threat model for the Kingsway Soft SSIS Integration Toolkit for Microsoft Dynamics 365 deployed to on-premises SQL Server and used to migrate data sourced from Microsoft Dynamics 365, version 8.2 to Microsoft Dynamics 365 cloud Dataverse.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
