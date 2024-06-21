@@ -170,6 +170,40 @@
                 "y": 70
               }
             ]
+          },
+          {
+            "position": {
+              "x": 599,
+              "y": 180
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "API"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "58be4a0d-40ed-4339-91d0-4a7ca2fa1dfd",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Actor",
+              "name": "API",
+              "description": "Dataverse API",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": true,
+              "threats": []
+            }
           }
         ],
         "description": "Main migration data flow."
