@@ -19,8 +19,8 @@
         "cells": [
           {
             "position": {
-              "x": -130,
-              "y": 360
+              "x": -320,
+              "y": 510
             },
             "size": {
               "width": 120,
@@ -60,8 +60,8 @@
           },
           {
             "position": {
-              "x": 850,
-              "y": 240
+              "x": 1070,
+              "y": 310
             },
             "size": {
               "width": 120,
@@ -98,211 +98,6 @@
               "storesInventory": false,
               "threats": []
             }
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "On-Premises Boundary",
-              "description": "SFF on-premises trust boundary. ",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "id": "0e29802b-10c2-4b52-a3e7-16ba6b1171a1",
-            "labels": [
-              "On-Premises Boundary"
-            ],
-            "source": {
-              "x": 60,
-              "y": 20
-            },
-            "target": {
-              "x": 200,
-              "y": 460
-            },
-            "vertices": [
-              {
-                "x": 250,
-                "y": 150
-              },
-              {
-                "x": 290,
-                "y": 260
-              }
-            ]
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Cloud Boundary",
-              "description": "Microsoft Azure trust boundary.",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "id": "2c58a59b-3a5f-4dec-a6b6-b98ca7ada0a5",
-            "labels": [
-              "Cloud Boundary"
-            ],
-            "source": {
-              "x": 800,
-              "y": 480
-            },
-            "target": {
-              "x": 820,
-              "y": 20
-            },
-            "vertices": [
-              {
-                "x": 520,
-                "y": 280
-              },
-              {
-                "x": 550,
-                "y": 70
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "a7f20ee7-b53b-4e1d-95db-ce9fa5e8aecb",
-            "source": {
-              "cell": "9a13854d-cbf0-4e35-b20e-ccb1f354bf2f"
-            },
-            "target": {
-              "cell": "3f28ee02-94ad-41b2-92c7-043a05b9d16f"
-            },
-            "vertices": [
-              {
-                "x": -40,
-                "y": 310
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "933aa019-f105-41dd-bf23-45bf190dade9",
-            "source": {
-              "cell": "3f28ee02-94ad-41b2-92c7-043a05b9d16f"
-            },
-            "target": {
-              "cell": "1deeb2d8-f25b-47bb-b4c4-04a89d412fd1"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Send data / receive response",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": true,
-              "isPublicNetwork": true,
-              "protocol": "Https",
-              "threats": []
-            },
-            "id": "4638f765-7329-463d-821c-bdaf9c375b8e",
-            "source": {
-              "x": 220,
-              "y": 260
-            },
-            "target": {
-              "cell": "58be4a0d-40ed-4339-91d0-4a7ca2fa1dfd"
-            },
-            "labels": [
-              "Send data / receive response"
-            ],
-            "vertices": [
-              {
-                "x": 420,
-                "y": 260
-              }
-            ]
           },
           {
             "shape": "flow",
@@ -347,9 +142,215 @@
             ]
           },
           {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "On-Premises Boundary",
+              "description": "SFF on-premises trust boundary. ",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "0e29802b-10c2-4b52-a3e7-16ba6b1171a1",
+            "labels": [
+              "On-Premises Boundary"
+            ],
+            "source": {
+              "x": 40,
+              "y": 30
+            },
+            "target": {
+              "x": 270,
+              "y": 560
+            },
+            "vertices": [
+              {
+                "x": 290,
+                "y": 260
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Cloud Boundary",
+              "description": "Microsoft Azure trust boundary.",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "2c58a59b-3a5f-4dec-a6b6-b98ca7ada0a5",
+            "labels": [
+              "Cloud Boundary"
+            ],
+            "source": {
+              "x": 600,
+              "y": 550
+            },
+            "target": {
+              "x": 700,
+              "y": 0
+            },
+            "vertices": [
+              {
+                "x": 520,
+                "y": 280
+              },
+              {
+                "x": 550,
+                "y": 70
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Pull data / write response",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "a7f20ee7-b53b-4e1d-95db-ce9fa5e8aecb",
+            "source": {
+              "cell": "9a13854d-cbf0-4e35-b20e-ccb1f354bf2f"
+            },
+            "target": {
+              "cell": "3f28ee02-94ad-41b2-92c7-043a05b9d16f"
+            },
+            "vertices": [
+              {
+                "x": -260,
+                "y": 300
+              }
+            ],
+            "labels": [
+              "Pull data / write response"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Push data / receive response",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "933aa019-f105-41dd-bf23-45bf190dade9",
+            "source": {
+              "cell": "3f28ee02-94ad-41b2-92c7-043a05b9d16f"
+            },
+            "target": {
+              "cell": "1deeb2d8-f25b-47bb-b4c4-04a89d412fd1"
+            },
+            "labels": [
+              "Push data / receive response"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Send data / receive response",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "protocol": "Https",
+              "threats": []
+            },
+            "id": "4638f765-7329-463d-821c-bdaf9c375b8e",
+            "source": {
+              "cell": "1deeb2d8-f25b-47bb-b4c4-04a89d412fd1"
+            },
+            "target": {
+              "cell": "58be4a0d-40ed-4339-91d0-4a7ca2fa1dfd"
+            },
+            "labels": [
+              "Send data / receive response"
+            ],
+            "vertices": [
+              {
+                "x": 420,
+                "y": 260
+              }
+            ]
+          },
+          {
             "position": {
-              "x": 630,
-              "y": 250
+              "x": 730,
+              "y": 270
             },
             "size": {
               "width": 112.5,
@@ -382,8 +383,8 @@
           },
           {
             "position": {
-              "x": 100,
-              "y": 230
+              "x": 70,
+              "y": 240
             },
             "size": {
               "width": 112.5,
@@ -416,8 +417,8 @@
           },
           {
             "position": {
-              "x": -50,
-              "y": 200
+              "x": -210,
+              "y": 60
             },
             "size": {
               "width": 60,
