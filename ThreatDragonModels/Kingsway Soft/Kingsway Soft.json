@@ -19,8 +19,8 @@
         "cells": [
           {
             "position": {
-              "x": -320,
-              "y": 510
+              "x": -330,
+              "y": 570
             },
             "size": {
               "width": 120,
@@ -131,15 +131,15 @@
               "threats": []
             },
             "id": "061c7f3c-81b6-4d1f-91a3-d86d7db920fa",
+            "labels": [
+              "Write data / send response"
+            ],
             "source": {
               "cell": "58be4a0d-40ed-4339-91d0-4a7ca2fa1dfd"
             },
             "target": {
               "cell": "a8089234-da45-42d0-99a7-0b45f6632ed4"
-            },
-            "labels": [
-              "Write data / send response"
-            ]
+            }
           },
           {
             "shape": "trust-boundary-curve",
@@ -241,15 +241,15 @@
               "threats": []
             },
             "id": "933aa019-f105-41dd-bf23-45bf190dade9",
+            "labels": [
+              "Push data / receive response"
+            ],
             "source": {
               "cell": "3f28ee02-94ad-41b2-92c7-043a05b9d16f"
             },
             "target": {
               "cell": "1deeb2d8-f25b-47bb-b4c4-04a89d412fd1"
-            },
-            "labels": [
-              "Push data / receive response"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -283,68 +283,20 @@
               "threats": []
             },
             "id": "4638f765-7329-463d-821c-bdaf9c375b8e",
+            "labels": [
+              "Send data / receive response"
+            ],
             "source": {
               "cell": "1deeb2d8-f25b-47bb-b4c4-04a89d412fd1"
             },
             "target": {
               "cell": "58be4a0d-40ed-4339-91d0-4a7ca2fa1dfd"
             },
-            "labels": [
-              "Send data / receive response"
-            ],
             "vertices": [
               {
                 "x": 420,
                 "y": 260
               }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Pull data / write response",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "a7f20ee7-b53b-4e1d-95db-ce9fa5e8aecb",
-            "source": {
-              "cell": "9a13854d-cbf0-4e35-b20e-ccb1f354bf2f"
-            },
-            "target": {
-              "cell": "3f28ee02-94ad-41b2-92c7-043a05b9d16f"
-            },
-            "vertices": [
-              {
-                "x": -260,
-                "y": 300
-              }
-            ],
-            "labels": [
-              "Pull data / write response"
             ]
           },
           {
@@ -379,14 +331,62 @@
               "threats": []
             },
             "id": "89f846ba-c4aa-45ce-9768-65b580271b1f",
+            "labels": [
+              "Write audit logs"
+            ],
             "source": {
               "cell": "3f28ee02-94ad-41b2-92c7-043a05b9d16f"
             },
             "target": {
               "cell": "ea6ae932-2003-467d-a7e2-c78dab361e15"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
             },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Pull data / write response",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "a7f20ee7-b53b-4e1d-95db-ce9fa5e8aecb",
             "labels": [
-              "Write audit logs"
+              "Pull data / write response"
+            ],
+            "source": {
+              "cell": "9a13854d-cbf0-4e35-b20e-ccb1f354bf2f"
+            },
+            "target": {
+              "cell": "a90ae01b-40d1-41b2-b14d-8ea56bebd134"
+            },
+            "vertices": [
+              {
+                "x": -250,
+                "y": 460
+              }
             ]
           },
           {
@@ -410,8 +410,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "58be4a0d-40ed-4339-91d0-4a7ca2fa1dfd",
             "zIndex": 11,
+            "id": "58be4a0d-40ed-4339-91d0-4a7ca2fa1dfd",
             "data": {
               "type": "tm.Actor",
               "name": "API",
@@ -458,8 +458,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "1deeb2d8-f25b-47bb-b4c4-04a89d412fd1",
             "zIndex": 12,
+            "id": "1deeb2d8-f25b-47bb-b4c4-04a89d412fd1",
             "data": {
               "type": "tm.Actor",
               "name": "Connector",
@@ -492,8 +492,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "3f28ee02-94ad-41b2-92c7-043a05b9d16f",
             "zIndex": 13,
+            "id": "3f28ee02-94ad-41b2-92c7-043a05b9d16f",
             "data": {
               "type": "tm.Process",
               "name": "Integration Package",
@@ -532,8 +532,8 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "ea6ae932-2003-467d-a7e2-c78dab361e15",
             "zIndex": 14,
+            "id": "ea6ae932-2003-467d-a7e2-c78dab361e15",
             "data": {
               "type": "tm.Store",
               "name": "Audit Database",
@@ -548,6 +548,83 @@
               "storesInventory": false,
               "threats": []
             }
+          },
+          {
+            "position": {
+              "x": -282.5,
+              "y": 340
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Connector"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "a90ae01b-40d1-41b2-b14d-8ea56bebd134",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Connector",
+              "description": "Kingsway Soft connector.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": true,
+              "threats": []
+            },
+            "zIndex": 15
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Pull data / write response",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "47456d6e-6e38-44a5-a7df-6b23221dd8be",
+            "labels": [
+              "Pull data / write response"
+            ],
+            "source": {
+              "cell": "a90ae01b-40d1-41b2-b14d-8ea56bebd134"
+            },
+            "target": {
+              "cell": "3f28ee02-94ad-41b2-92c7-043a05b9d16f"
+            },
+            "vertices": [],
+            "zIndex": 18
           }
         ],
         "description": "Main migration data flow."
